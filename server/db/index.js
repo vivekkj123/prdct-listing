@@ -24,4 +24,7 @@ module.exports = {
     getProducts: (categoryName)=>{
        return db.collection('categories').find({name: categoryName}).toArray()
     },
+    addProduct: (productDetails)=>{
+        db.collection('products').insertOne({name: productDetails.name, categories: [productDetails.category]})
+    }
 }

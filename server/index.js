@@ -26,4 +26,8 @@ app.get("/get_products",async(req,res)=>{
     let products = await db.getProducts(categoryName)
     res.send(products)
 })
+app.post("/add_product",async(req,res)=>{
+    let productDetails = await req.body
+    db.addProduct(productDetails)
+})
 app.listen( 8000, () => console.log( `The application is listening on port 8000!` ) );

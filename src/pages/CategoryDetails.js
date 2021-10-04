@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "../axios";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 function CategoryDetails({ category }) {
 	const [Products, setProducts] = useState([]);
 const [SubCategories, setSubCategories] = useState([]);
@@ -22,6 +22,7 @@ const [SubCategories, setSubCategories] = useState([]);
 	return (
 		<div className="CategoryDetails">
 		<h1>{category}</h1>
+		<Link to="/addProduct"><button>Add a New Product</button></Link>
 		<h2>Sub Categories</h2>
 			<ul className="subCategories">
 				{SubCategories.map((SubCategory) => (

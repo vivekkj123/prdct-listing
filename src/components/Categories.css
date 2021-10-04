@@ -1,7 +1,11 @@
-ul{
+ul {
     list-style-type: none;
-    
 }
-li{
+li {
     border: 1px solid grey;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px;
+    text-align: center;
 }

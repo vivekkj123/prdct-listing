@@ -1,4 +1,19 @@
-.subCategories{
+.subCategories {
 	display: flex;
 	padding: 15px;
+}
+
+button {
+	cursor: pointer;
+	background-color: #1d76e8;
+	border: none;
+	height: 40px;
+	width: 200px;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	margin: auto;
+}
+form > button{
+	margin-left: 50px;
 }
